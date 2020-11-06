@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<p>Different picture</p>
+<picture>
+    <source media="(max-width: 639px)" srcset="@Url.Content("~/image/resolution_320.jpg")">
+    <source media="(max-width: 1279px)" srcset="@Url.Content("~/image/resolution_640.jpg")">
+    <source media="(min-width: 1280px)" srcset="@Url.Content("~/image/resolution_1280.jpg")">
+    <img src="@Url.Content("~/image/resolution_1280.jpg")" alt="Different picture">
+</picture>
+
+<picture>
+    <source media="(max-width: 320px)" srcset="@Url.Content("~/image/resolution_320.jpg")">
+    <source media="(max-width: 640px)" srcset="@Url.Content("~/image/resolution_640.jpg")">
+    <img src="@Url.Content("~/image/resolution_1280.jpg")" alt="Different picture">
+</picture>
